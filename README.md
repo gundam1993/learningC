@@ -1,3 +1,3 @@
 # learningC
 
-Record for learning *** The C Programming Language ***
+Record for learning ***The C Programming Language***
