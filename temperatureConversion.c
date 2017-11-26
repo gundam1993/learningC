@@ -21,10 +21,13 @@
 //     fahrf = fahrf + step;
 //   }
 // }
+#define LOWER 0.0
+#define UPPER 300.0
+#define STEP 10.0
 int main () {
   float celsius;
   printf("摄氏与华氏温度对照表\n");
 
-  for (celsius = 300.0; celsius > 0.0; celsius = celsius - 10.0)
+  for (celsius = UPPER; celsius >LOWER; celsius = celsius - STEP)
     printf("%3.0f %6.2f\n", celsius, (celsius / 5.0 * 9.0 + 32));
 }
