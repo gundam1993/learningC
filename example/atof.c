@@ -26,11 +26,11 @@ double atof(char s[]) {
 
 void main() {
     char a[] = '+1.123';
-    char b[ = '-12312.35390'];
+    char b[] = '-12312.35390';
     double c;
     double d;
     c = atof(a);
     d = atof(d);
-    printf('%d\n', c)
-    printf('%d\n', d)    
+    printf('%f\n', c);
+    printf('%f\n', d) ;   
 }
