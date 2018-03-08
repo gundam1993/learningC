@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MAXLINE 1000 /* 最大输入长度 */
 
-int getline(char line[], int max);
+int getlines(char line[], int lim);
 int strindex(char source[], char searchfor[]);
 char pattern[] = "ould"; /* 待查找的模式 */
 
@@ -9,7 +9,7 @@ char pattern[] = "ould"; /* 待查找的模式 */
 int main() {
     char line[MAXLINE];
     int found = 0;
-    while (getline(line, MAXLINE) > 0) {
+    while (getlines(line, MAXLINE) > 0) {
         if (strindex(line, pattern) > = 0) {
             printf("%s", line);
             found++;
@@ -18,8 +18,8 @@ int main() {
     return found;
 }
 
-/* getline 函数： 将行保存到 s 中，并返回改行的长度 */
-int getline(char s[], int lim) {
+/* getlines 函数： 将行保存到 s 中，并返回改行的长度 */
+int getlines(char s[], int lim) {
     int c, i;
     i = 0;
     while (--lim > 0 && (c = getchar()) != EOF && c != '\n')
