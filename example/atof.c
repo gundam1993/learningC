@@ -21,16 +21,16 @@ double atof(char s[]) {
         val = 10.0 * val + (s[i] - '0');
         power *= 10.0;
     }
-    return sign * val / power
+    return sign * val / power;
 }
 
 void main() {
-    char a[] = '+1.123';
-    char b[] = '-12312.35390';
+    char a[] = "+1.123";
+    char b[] = "-12312.35390";
     double c;
     double d;
     c = atof(a);
-    d = atof(d);
-    printf('%f\n', c);
-    printf('%f\n', d) ;   
+    d = atof(b);
+    printf("%f\n", c);
+    printf("%f\n", d) ;   
 }
